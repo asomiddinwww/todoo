@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>User List</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f3f4f6;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3rem;
+      padding: 30px;
+    }
+    .container {
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    .input-group {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    input {
+      flex: 1;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 14px;
+    }
+    .btn {
+      padding: 10px 15px;
+      color: #090909;
+      padding: 0.7em 1.7em;
+      font-size: 18px;
+      border-radius: 0.5em;
+      background-color: white;
+      cursor: pointer;
+      border: 1px solid #e8e8e8;
+      font-weight: 700;
+      transition: all 0.3s;
+      font-family: sans-serif;
+      box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+    }
+    .avatar {
+      width: 15vw;
+      border-radius: 10px;
+    }
+    .person {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .btn:active {
+      color: #666;
+      box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+    }
+
+    .content {
+      padding: 20px;
+      background-color: white;
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: auto auto auto auto auto;
+    }
+    .actions {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+    }
+    .person {
+      background: #f9fafb;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 15px;
+      text-align: center;
+      border: 1px solid #e5e7eb;
+    }
+    .person h2 {
+      margin: 0;
+      font-size: 18px;
+      color: #111827;
+    }
+    .person p {
+      margin: 5px 0 0;
+      color: #6b7280;
+    }
+    .input-group button {
+      width: 100%;
+    }
+    .input-group {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .flexx button {
+        width: 100%;
+        padding: 8px;
+        color: white;
+        text-align: center;
+        cursor: pointer;
+    }
+    .flexx {
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .delete {
+      width: 100%;
+      padding: 10px;
+      border-radius: 7px;
+      cursor: pointer;
+      background-color:rgb(235, 106, 19);
+      color: white;
+      border: none;
+    } 
+    .edit {
+      width: 100%;
+      padding: 10px;
+      border-radius: 7px;
+      outline: none;
+      cursor: pointer;
+      border: none;
+      color: white;
+      background-color:rgb(241, 180, 66);
+    }
+    .item-inp {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .inps {
+      display: flex;
+      gap: 1rem;
+    }
+    .centr-top {
+      width: 400px;
+      padding: 30px;
+      background-color: white;
+      padding-bottom: 100px;
+    }
+    .inps {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+    }
+    .btn button {
+      width: 100%;
+    }
+    .btn {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="centr-top">
+    <h1>Foydalanuvchilar</h1>
+     <div class="input-group">
+  <div class="inps">
+      <input type="text" id="name" placeholder="Ism kiriting">
+      <input type="number" id="age" placeholder="Yosh kiriting">
+      <input type="string" id="img" placeholder="img">
+    </div>
+  </div>
+  <button class="btn">Qo‘shish</button>
+</div>
+  </div>
+  <div class="container">
+  <div class="content"></div>
+  
+
+
+  <script src="./main.js"></script>
+</body>
+</html>
